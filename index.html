@@ -16,7 +16,7 @@
  
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" id="bioPage" href="./index.html">Home</a>
+      <a class="nav-link" id="bioPage" href="./index.html">Home</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" id="portfolioPage" href="./develop/assets/html/portfolio.html">Portfolio</a>
@@ -181,7 +181,7 @@
 
   <!--PORTFOLIO PAGE-->
 
-  <div class="masterDiv" id="masterContactDiv">
+  <div class="masterDiv" id="masterPortfolioDiv">
     <div class="portfolio-wrapper">
       <div class="row header-block">
         <div class="col">
@@ -244,14 +244,41 @@
   </div>
 
   <script>
-    const masterBioDiv = $('.masterBioDiv');
+    let allMasterDivs = $('.masterDiv');
+    let copyAllMasterDivs = [];
+    let masterBioDiv = $('#masterBioDiv');
+    let masterContactDiv = $('#masterContactDiv');
+    let masterPortfolioDiv = $('#masterPortfolioDiv');
+    const masterBioDivSave = masterBioDiv;
+    const masterContactDivSave = masterContactDiv;
+    const masterPortfolioDivSave = masterPortfolioDiv;
 
+    for (let i = 0; i < allMasterDivs.length; i++) {
+      copyAllMasterDivs.push(allMasterDivs[i].classList[0]);
+      console.log(copyAllMasterDivs);
+    }
+
+    function masterDivReset () {
+    for (let i = 0; i < allMasterDivs.length; i++) {
+        allMasterDivs[i].className = ''
+        allMasterDivs[i].classList.add(copyAllMasterDivs[i]);
+        
+      }
+    }
 
     $('.nav-link').click(function (){
       event.preventDefault()
-      console.log(event.target.id);
-      console.log('yes');
-})
+      masterDivReset()
+      if (event.target.id === 'portfolioPage') {
+        masterPortfolioDiv.removeClass('masterDiv');
+      } else if (event.target.id === 'bioPage'){
+        console.log('Bio');
+        masterBioDiv.removeClass('masterDiv');
+      } else if (event.target.id === 'contactPage') {
+        console.log('contact');
+        masterContactDiv.removeClass('masterDiv');
+      }
+    })
   </script>
     
     </body>
