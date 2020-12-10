@@ -37,12 +37,15 @@
     </div>  
       <div class="row justify-content-lg-center" id="bio-block">
         <div class="col-12 col-sm bio-content" id="bio-blurb"> 
-              <h3>Greetings,</h3>
-              <p>My name is Lia Liu.</p>
-              <h4 style="text-decoration: underline;">Find me at these here:</h4>
-              <p class="sm-links">
-                <a href="https://github.com/Clatrobe00" target="_blank">Youtube
-                </a>
+              <h2>Greetings, I'm Lia Liu</h3>
+              <h4 class="font-weight-lighter">The funniest Chinese teacher you can find!</h4>
+              <p>
+                I'm an experienced Chinese teacher of adult students. Fluent in both English and Chinese, I am a qualified high school Chinese teacher and holds a TC-SOL certificate, an international Chinese teaching qualification awarded by the Confucius Institute.
+
+                In the standard Chinese national speaking test, I scored 99.2. Also, I am the most humorous Chinese teacher that you will ever meet! Humor plays a big part in my lessons as you will see from my Tiktok account lialiu_chinese, which has over 88k followers.
+                ​
+                I've been teaching Chinese for two years, one year in China and one in America. My students include teachers, lawyers, college students, tech industry employees, and more. I've helped my students to pass HSK exams, perfect their Mandarin skills, boost their confidence in communication and become better interpreters between both English and Chinese languages.
+                
               </p>
               <p class="sm-links">
                 <a href="https://www.linkedin.com/in/charles-latrobe-bateman-6b748a1b6/" target="_blank">Tik-Tok
@@ -50,7 +53,7 @@
               </p>
 
         </div>
-        <div class="col-12 order-first sm-order-second col-sm bio-content" id="bio-pic">
+        <div class="col-12 order-second sm-order-second col-sm bio-content" id="bio-pic">
           <div class="bio-card" style="width: 100%;">
             <img class="card-img-top" id="prof-pic" src="./develop/assets/images/profile-pic.JPG" alt="Card image cap">
             <div class="card-body text-center">
@@ -62,37 +65,17 @@
           </div>
         </div>
       
-        <div class="col-12 col-sm-6 bio-content" id="sidebar-content">
+        <div class="col-12 col-sm bio-content" id="sidebar-content">
           <div class="row">
-            <h5>Not much going on, so check out these pictures!</h5>
+            <h5>Check out my latest videos on YouTube and TikTok</h5>
           </div>
           
-          <div class="row"><div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="./develop/assets/images/img004.jpg" alt="Desert Hills">
-                <p class="image-caption text-center">The rolling hills of Utah</p>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./develop/assets/images/img011.jpg" alt="Two Elk relax on the beach">
-                <p class="image-caption text-center">Two Elk on the Beach</p>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./develop/assets/images/img046.jpg" alt="Lia enjoys her day on the mountain">
-                <p class="image-caption text-center">Lia Looking Lovely</p>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-            </div>
+          <div class="row">
+            Upper content
           </div>
-          <div class="row"></div>
+          <div class="row">
+            Bottom content
+          </div>
         
         </div>
       </div>
@@ -197,9 +180,9 @@
         <div class="col-12 col-sm-7 portfolio-content" id="portfolio-project-list">
           <div class="row media">
             <div class="col-12 col-sm-7 port-descrip">
-              <h5 class="mt-0"><a href="https://clatrobe00.github.io/01-Website-Code-Refactor/" target="_blank">Website Code Refactor</a></h5>
+              <h5 class="mt-0"><a href="https://clatrobe00.github.io/01-Website-Code-Refactor/" target="_blank">Empty Space</a></h5>
                 <p>
-                  This was my first project. I refactored the html and css to improve accessibility, functionality, and efficiency. I added semantic elements to the html to make it more readable. Additionally, I added alt tags to the images for improved accessibility and search engine optimization.
+                  
                 </p>  
             </div>
             <div class="col-12 col-sm-5">
@@ -210,14 +193,13 @@
       </div>
       <div class="row portfolio-block">
         <div class="col-12 order-last col-sm-3 portfolio-content">
-          <h5 class="text-center">Currently learning: JavaScript</h5>
+          <h5 class="text-center">More coming soon!</h5>
         </div>
         <div class="col-12 col-sm-7 portfolio-content" id="portfolio-project-list">
           <div class="media row">
             <div class="col-12 col-sm-7 port-descrip">
               <h5 class="mt-0"><a href="https://clatrobe00.github.io/LiaLiuChinese/index.html" target="_blank">Lia Liu Chinese</a></h5>
               <p>
-                My first private project- this is a website for my wife's online teaching content business, Lia Liu Chinese - More updates coming soon!
               </p> 
             </div>   
             <div class="col-12 col-sm-5">
@@ -264,6 +246,8 @@
         
       }
     }
+
+    masterBioDiv.removeClass('masterDiv');
 
     $('.nav-link').click(function (){
       event.preventDefault()
