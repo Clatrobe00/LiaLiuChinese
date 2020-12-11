@@ -2,6 +2,12 @@
     display: none;
 }
 
+#about-bio {
+    display: flex;
+    place-items: center;
+    text-align: center;
+}
+
 .nav-tabs {
     background-color: rosybrown;    
 }
@@ -14,17 +20,17 @@ a.active.nav-link {
     background-color: white;
 }
 
-.bio-content, .portfolio-content, .contact-content {
+.bio-content, .about-content, .contact-content {
     background-color: white;
     margin: 5px;
 }
 
-#contact-block, .portfolio-block, #bio-block, .footer {
+#contact-block, .about-block, #bio-block, .footer {
     background-color: rosybrown;
     padding: 20px;
 }
 
-#contact-block, #bio-block, .portfolio-block, .bio-content, .portfolio-content, .contact-content, .footer {
+#contact-block, #bio-block, .about-block, .bio-content, .about-content, .contact-content, .footer {
     border-radius: 25px;
 }
 
@@ -45,15 +51,15 @@ a.active.nav-link {
     padding: 30px;
 }
 
-.contact-wrapper, .portfolio-wrapper, .bio-wrapper, #bio-blurb, .portfolio-content, .contact-content {
+.contact-wrapper, .about-wrapper, .bio-wrapper, #bio-blurb, .about-content, .contact-content {
     padding: 20px;
 }
 
-.portfolio-block, #contact-block, #bio-block {
+.about-block, #contact-block, #bio-block {
     margin-bottom: 10px;
 }
 
-.portfolio-thumbnail {
+.about-thumbnail {
     width: 150px; 
     margin-right: 15px;
     margin-left: 15px;
@@ -67,11 +73,11 @@ a.active.nav-link {
 }
 
 .port-descrip a:hover, .nav-link:hover, #bio-blurb a:hover {
-    color: dimgrey;
+    color: black;
     text-decoration: underline;
 }
 
-.contact-wrapper, .bio-wrapper, .portfolio-wrapper {
+.contact-wrapper, .bio-wrapper, .about-wrapper {
     margin: 5px;
 }
 
@@ -84,14 +90,14 @@ a.active.nav-link {
     .nav-tabs li { 
         width:100%; 
     }
-    .contact-wrapper, #contact-block, .portfolio-wrapper, .portfolio-block, #bio-block, .bio-wrapper {
+    .contact-wrapper, #contact-block, .about-wrapper, .about-block, #bio-block, .bio-wrapper {
         background-color: palegoldenrod;
         color: white;
         text-align: center; 
         margin: 0px; 
     }
     
-    .contact-content, .portfolio-content, .bio-content, .footer-block h5 {
+    .contact-content, .about-content, .bio-content, .footer-block h5 {
         color: black;
     }
 

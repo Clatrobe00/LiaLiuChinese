@@ -19,7 +19,7 @@
       <a class="nav-link" id="bioPage" href="./index.html">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="portfolioPage" href="./develop/assets/html/portfolio.html">About</a>
+      <a class="nav-link" id="aboutPage" href="./develop/assets/html/portfolio.html">About</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" id="contactPage" href="./develop/assets/html/contact.html">Contact</a>
@@ -163,8 +163,8 @@
 
   <!--PORTFOLIO PAGE-->
 
-  <div class="masterDiv" id="masterPortfolioDiv">
-    <div class="portfolio-wrapper">
+  <div class="masterDiv" id="masterAboutDiv">
+    <div class="about-wrapper">
       <div class="row header-block">
         <div class="col">
           <h1>About</h1>
@@ -172,30 +172,28 @@
           </div>
         </div>
       </div>
-      <div class="row portfolio-block">
-        <div class="col-12 col-sm-3 portfolio-content" id="portfolio-bio">
-          <p>What should we put here?</p>
-          <p>If you like what you see, feel free to contact me!</p>
+      <div class="row about-block">
+        <div class="col-12 col-sm-3 about-content" id="about-bio">
+          <h5>Classes with Lia</h5>
         </div>
-        <div class="col-12 col-sm-7 portfolio-content" id="portfolio-project-list">
+        <div class="col-12 col-sm-8 about-content" id="about-project-list">
           <div class="row media">
-            <div class="col-12 col-sm-7 port-descrip">
-              <h5 class="mt-0"><a href="https://clatrobe00.github.io/01-Website-Code-Refactor/" target="_blank">Empty Space</a></h5>
+            <div class="col-12 col-sm port-descrip">
+              <h5 class="mt-0"></h5>
                 <p>
-                  
+                  Interested in signing up for Mandarin Chinese lessons with me? Don't be shy! I offer engaging, energetic Chinese lessons that cater to your learning objectives- be they business, survival, or day-to-day language use. My clients have included lawyers, software engineers, and executives.
+
+                  I offer personalized Mandarin Chinese classes both in one-on-one and small group settings. If you are interested in learning from me, please feel free to reach out and inquire about my availability! I'll get back to you soon.
                 </p>  
-            </div>
-            <div class="col-12 col-sm-5">
-              <img class="portfolio-thumbnail img-fluid" src="../images/01-html-css-git-homework-demo.png" alt="Screenshot of website code refactor project">
             </div>
           </div>
         </div>
       </div>
-      <div class="row portfolio-block">
-        <div class="col-12 order-last col-sm-3 portfolio-content">
+      <div class="row about-block">
+        <div class="col-12 order-last col-sm-3 about-content">
           <h5 class="text-center">More coming soon!</h5>
         </div>
-        <div class="col-12 col-sm-7 portfolio-content" id="portfolio-project-list">
+        <div class="col-12 col-sm-7 about-content" id="about-project-list">
           <div class="media row">
             <div class="col-12 col-sm-7 port-descrip">
               <h5 class="mt-0"><a href="https://clatrobe00.github.io/LiaLiuChinese/index.html" target="_blank">Lia Liu Chinese</a></h5>
@@ -203,7 +201,7 @@
               </p> 
             </div>   
             <div class="col-12 col-sm-5">
-              <img class="portfolio-thumbnail img-fluid" src="../images/profile-pic.JPG" alt="Lia Liu Chinese's Profile picture">
+              <img class="about-thumbnail img-fluid" src="../images/profile-pic.JPG" alt="Lia Liu Chinese's Profile picture">
             </div>
           </div>
         </div>
@@ -229,10 +227,10 @@
     let copyAllMasterDivs = [];
     let masterBioDiv = $('#masterBioDiv');
     let masterContactDiv = $('#masterContactDiv');
-    let masterPortfolioDiv = $('#masterPortfolioDiv');
+    let masterAboutDiv = $('#masterAboutDiv');
     const masterBioDivSave = masterBioDiv;
     const masterContactDivSave = masterContactDiv;
-    const masterPortfolioDivSave = masterPortfolioDiv;
+    const masterAboutDivSave = masterAboutDiv;
 
     for (let i = 0; i < allMasterDivs.length; i++) {
       copyAllMasterDivs.push(allMasterDivs[i].classList[0]);
@@ -252,8 +250,8 @@
     $('.nav-link').click(function (){
       event.preventDefault()
       masterDivReset()
-      if (event.target.id === 'portfolioPage') {
-        masterPortfolioDiv.removeClass('masterDiv');
+      if (event.target.id === 'aboutPage') {
+        masterAboutDiv.removeClass('masterDiv');
       } else if (event.target.id === 'bioPage'){
         console.log('Bio');
         masterBioDiv.removeClass('masterDiv');
